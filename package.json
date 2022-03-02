@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:chrome": "cypress run --browser chrome --no-exit",
+    "test:um": "cypress-tags run -e TAGS=@testeum"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,12 @@
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
   "devDependencies": {
+    "cypress": "^9.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^1.6.2"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
   }
 }

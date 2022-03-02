@@ -10,14 +10,14 @@ class QuoteCarroPage {
     cy.visit(url);
   }
 
+  clicarbuttonAutomobile() {
+    cy.get(quoteCarroElements.buttonAutomobile()).click();
+  }
+
   // Realiza os inputs da seção 'Enter Vehicle Data'
   inputLoginCpf(cpf) {
     cy.get(quoteCarroElements.inputMake()).click({ force: true });
     cy.get(quoteCarroElements.inputMake()).type(cpf);
-  }
-
-   clicarLogin() {
-    cy.get(backOfficeElements.btnLogin()).click();
   }
 
   // Desmarca o checkbox de arquuivo unico para toda rede

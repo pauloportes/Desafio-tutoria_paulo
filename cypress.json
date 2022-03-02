@@ -1,1 +1,6 @@
-{}
+{
+    "defaultCommandTimeout": 2000,
+    "baseUrl": "http://sampleapp.tricentis.com/101/index.php",
+    "viewportWidth": 1360,
+    "viewportHeight": 790
+  }

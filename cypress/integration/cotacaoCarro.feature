@@ -27,7 +27,7 @@ Feature: Solicitar uma cotação de suguro de carro
         And seleciono um Hobbie
         And clico no botão next 2
         And insiro a data de início - <startDate>
-        And seleciono a soma do seguro
+        And seleciono a soma do seguro - <insuranceSum>
         And seleciono a Taxa de Mérito - <meritRating>
         And seleciono o seguro de danos - <damageInsurance>
         And seleciono Produtos opcionais
@@ -37,7 +37,7 @@ Feature: Solicitar uma cotação de suguro de carro
         And clico no botão next 4
         And insiro e-mail - <email>
         And insiro fone - <phone>
-        And insiro usuario <username>
+        And insiro usuario - <username>
         And insiro senha - <password>
         And insiro confirmação de senha - <confirmPassword>
         And clico no botão enviar
@@ -45,5 +45,5 @@ Feature: Solicitar uma cotação de suguro de carro
 
 
         Examples:
-            | make    | enginePerformance | dateOfManufacture | numberOfSeats | fuel    | listPrice | licensePlateNumber | annualMileage  | firstName  | lastName | birthDate  | streetAddress         | country | zipCode | city      | occupation | startDate  | meritRating | damageInsurance | courtesyCar | email            | phone       | username | password | confirmPassword  |
-            | Porsche | 200               | 05/12/2018        | 5             | Petrol  | 25000     | 123                | 200           | Peter       | Williams | 05/08/1989 | Great Street number 2 | Albania | 5555    | Test City | Employee   | 05/05/2022 | Bonus 5     | No Coverage     | Yes         | test@test.com.br | 55819898989 | teste    | Test123  | Test123          |
+            | make    | enginePerformance | dateOfManufacture | numberOfSeats | fuel    | listPrice | licensePlateNumber | annualMileage  | firstName  | lastName | birthDate  | streetAddress         | country | zipCode | city      | occupation | startDate  | insuranceSum  | meritRating | damageInsurance | courtesyCar | email            | phone       | username | password | confirmPassword  |
+            | Porsche | 200               | 05/12/2018        | 5             | Petrol  | 25000     | 123                | 200           | Peter       | Williams | 05/08/1989 | Great Street number 2 | Albania | 5555    | Test City | Employee   | 05/05/2022 | 3.000.000,00  | Bonus 5     | No Coverage     | Yes         | test@test.com.br | 55819898989 | teste    | Test123  | Test123          |
